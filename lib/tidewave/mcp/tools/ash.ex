@@ -9,13 +9,10 @@ defmodule Tidewave.MCP.Tools.Ash do
           description: """
           Returns all Ash domains and their resources for the current project.
 
-          This calls `Ash.Info.domains_and_resources/1` for the project's OTP app(s)
-          and returns the domains with their associated resources.
-
           To find out what extensions a resource has, use `Spark.extensions/1`.
 
-          You can use Info modules like `Ash.Resource.Info` as well as any info modules
-          from extensions to interrogate individual resources for more details.
+          You can use Info modules like `Ash.Resource.Info` as well as any `*.Info` modules
+          from extensions to interrogate individual resources and domains for more details.
           """,
           inputSchema: %{
             type: "object",
